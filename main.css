@@ -1,0 +1,212 @@
+/*----- Template Styling ------*/
+div {
+	margin-bottom: .25em;
+}
+
+div.section-title {
+	color: gray;
+	font-size: 2em;
+	margin: 1em 0;
+	padding: .75em;
+	font-family: monospace;
+	background-color: #e3e3e3;
+}
+
+div.section-sub-title {
+	color: gray;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin-bottom: .5em;
+	font-family: monospace;
+	border-bottom: solid 1px gray;
+}
+
+/*----- Custom Styling ------*/
+
+/*-- Global --*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,300i,400,400i,700,700i');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #222222;
+}
+
+h1, h2, h3, .seondary {
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+}
+
+div.color-block-container {
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div.color-block {
+	width: 200px;
+	height: 200px;
+	border: #e3e3e3 1px solid;
+	margin: 1em;
+	
+}
+
+.color-primary {
+	background-color: #fe0000;
+	color: #FFF;
+}
+
+.color-secondary {
+	background-color: #2a8bde;
+}
+
+/* .color-tertiary {
+
+} */
+
+.color-neutral-primary {
+	background-color: #222222;
+}
+
+.color-neutral-secondary {
+	background-color: #4c4b4b;
+}
+
+.color-neutral-tertiary {
+	background-color: #fff;
+}
+
+/*-- Buttons --*/
+
+button {
+	background: #2A8BDE;
+	color: #fff;
+	border: none;
+	box-shadow: none;
+	padding: .5em .75em;
+	margin: .75em;
+	font-size: 1.15em;
+}
+
+button.text {
+	background: none;
+	color: #FE0000;
+	padding: 0;
+}
+
+button.text:after {
+	content: " >";
+}
+
+/*-- Forms --*/
+
+/*-- Text --*/
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+	text-transform: uppercase;
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+/*-- Tab --*/
+
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/*-- Accorion --*/
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    margin: 0;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: block;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
